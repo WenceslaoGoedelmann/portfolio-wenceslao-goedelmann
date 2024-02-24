@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3N</title>
+    <!-- CDN bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- CDN De bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light"
+        style="--bs-border-opacity: 0.2"
+      >
+        <div class="container-fluid px-5">
+          <!-- 
+            px-5: padding izquierda y derecha 
+            container-fluid: ocupa todo el ancho
+        -->
+          <a class="navbar-brand" href="#"
+            ><img src="img\logo2.png" alt="" class="logoContainer"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recorrido">Recorrido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galeria</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="bg-dark  d-flex flex-column align-items-center justify-content-center"
+    >
+      <section class="py-2">
+        <!-- py-5: padding arriba y abajo -->
+        <div class="container px-5">
+          <div class="text-center my-5">
+            <!-- el texto de este div va a estar centrado y tiene un margin arriba y abajo -->
+            <h1 class="display-5 text-white fw-bolder mb-2">Hola soy,</h1>
+            <h1 class="display-5 text-white fw-bolder mb-2">
+              <span id="element"></span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="py-2">
+        <!-- py-5: padding arriba y abajo -->
+        <div class="container d-flex align-items-center p-5">
+
+          <div class="container  ">
+            <h2 class="text-white fw-bolder  mb-2">Sobre mi</h2>
+            <p class="lead text-white mb-4">
+              Soy Ingeniero Electromecánico devenido en Desarrollador Web. En
+              paralelo a mi desarrollo profesional como ingeniero
+              electromecánico, comencé a incursionar en el mundo del Desarrollo
+              Web gracias a mi afición por la automatización y domótica con
+              microcontroladores Arduino. Al surgir la necesidad de desarrollar
+              una interfaz de comunicación “user friendly” con Arduino, fue que
+              comencé mis estudios en la carrera de Programacion Web Full Stack,
+              en la cual me desempeño actualmente.
+            </p>
+          </div>
+                    <div class="container ">
+            <img
+              src="img\never-stop-learning2.jpg"
+              alt=""
+              class="imgContainer"
+            />
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+      <ul class="nav nav-tabs " id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active bg-dark text-white"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Educacion
+          </button>
+        </li>
+        <li class="nav-item " role="presentation">
+          <button
+            class="nav-link bg-dark text-white"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Certificados
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item bg-dark text-white">An item</li>
+            <li class="list-group-item bg-dark text-white">A second item</li>
+            <li class="list-group-item bg-dark text-white">A third item</li>
+            <li class="list-group-item bg-dark text-white">A fourth item</li>
+            <li class="list-group-item bg-dark text-white">And a fifth one</li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">An item</li>
+            <li class="list-group-item bg-dark text-white">A second item</li>
+            <li class="list-group-item bg-dark text-white">A third item</li>
+            <li class="list-group-item bg-dark text-white">A fourth item</li>
+            <li class="list-group-item bg-dark text-white">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Top 3 De Mis Proyectos</h2>
+
+          <!-- Cards -->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card bg-dark border-light  h-100" style="--bs-border-opacity: 0.5">
+                <img
+                  src="img\824shots_so.png"
+                  alt="Rodrigo de paul"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">De Paul</h3>
+                  <p>
+                    Los dirigidos por Scaloni vencieron 2-1 a los Socceroos con
+                    goles de Messi y Julián Álvarez y se metieron en los cuartos
+                    de final de la Copa del Mundo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card bg-dark border-light  h-100" style="--bs-border-opacity: 0.5">
+                <img src="img\824shots_so.png" alt="Messi" class="card-img-top" />
+                <div class="card-body">
+                  <h3 class="card-title">De Paul</h3>
+                  <p>
+                    La selección Argentina se consagró campeón mundial por
+                    tercera vez en la historia al vencer por 4 a 2 en los
+                    penales a Francia en la final.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card bg-dark border-light  h-100" style="--bs-border-opacity: 0.5">
+                <img
+                  src="img\824shots_so.png"
+                  alt="Di Maria"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">De Paul</h3>
+                  <p>
+                    Argentina ganó, goleó y gustó al derrotar a Italia por 3-0
+                    en La Finalíssima
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container d-flex">
+          <div class="container d-flex flex-column">
+            <b>Contacto:</b>
+            <span><i class="bi bi-whatsapp"></i><a href="https://wa.me/542215468203" target="_blank">+54 9 221 5468203</a></span>
+            <span><i class="bi bi-telephone"></i><a href="tel:+542215468203">+54 9 221 5468203</a></span>
+            <span><i class="bi bi-envelope"></i><a href="mailto:wenceslaogoedelmann@hotmail.com?subject=Hola Wenceslao"> wenceslaogoedelmann@hotmail.com</a></span>
+            <b>Nuestras Redes:</b>
+            <div class="redes">
+                <a href="https://www.instagram.com/tcinteligente/" class="instagram-icon" target="_blank"></a>
+                <a href="https://www.facebook.com/profile.php?id=100087342338358" class="facebook-icon" target="_blank" ></a>
+            </div>  
+          </div>
+          <div class="container">
+            <form class="row g-3" action="https://formsubmit.co/wenceslaogoedelmann@hotmail.com" method="POST">
+              <div class="col-12">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="tuemail@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hola" required>
+              </div>
+              <div class="col-12">
+                <label for="coments" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="coments" name="coments" placeholder="Escribe aqui..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary" >Enviar</button>
+              </div>
+              <input type="hidden" name="_next" value="https://www.google.com.ar/">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Wenceslao.",
+          "Full-Stack Developer.",
+          "Ingeniero Electromecánico",
+        ],
+        smartBackspace: true,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        startDelay: 1000,
+      });
+    </script>
+  </body>
+</html>

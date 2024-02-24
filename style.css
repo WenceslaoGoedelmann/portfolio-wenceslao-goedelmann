@@ -1,0 +1,23 @@
+body {
+    
+    color: white;
+
+  }
+  
+.logoContainer{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.imgContainer{
+    max-width: 400px;
+    max-height: 290px;
+    border-radius: 5px;
+}
+
+.imgContainer2{
+    max-width: 400px;
+    max-height: 290px;
+    border-radius: 5px;
+}
