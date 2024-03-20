@@ -3,7 +3,8 @@ body {
     color: white;
 
   }
-  
+
+
 .logoContainer{
     width: 80px;
     height: 80px;
@@ -41,7 +42,8 @@ body {
     position: fixed;
     z-index: 2;
     display: none;
-    top: 20px;
+    top: 0px;
+    max-height: 90vh;
   }
 
   .open-project-info {

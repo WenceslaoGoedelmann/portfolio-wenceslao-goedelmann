@@ -6,7 +6,7 @@ const topProjectsData = [
       category: 'Sistema de Gestion de Turnos',
       linkWeb: 'https://simpsonzzapi.vercel.app/',
       linkCode: 'https://simpsonzzapi.vercel.app/',
-      description: 'Plataforma de compra-venta de tecnología retro. Permite a los usuarios buscar productos, registrarse, publicar sus propios artículos, hacer reservas de compra, crear valoraciones y añadir favoritos.',
+      description: 'Plataforma de compra-venta de tecnología retro. Permite a los usuarios buscar productos, registrarse, publicar sus propios artículos, hacer reservas de compra, crear valoraciones y añadir favoritos. Plataforma de compra-venta de tecnología retro. Permite a los usuarios buscar productos, registrarse, publicar sus propios artículos, hacer reservas de compra, crear valoraciones y añadir favoritos.',
       technologies: 'React JavaScript NodeJs ExpressJs MySQL HTML CSS',
     },
     {
