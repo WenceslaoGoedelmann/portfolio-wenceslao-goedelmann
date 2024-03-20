@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CDN bootstrap icons -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+      />
+      <!-- CDN De bootstrap -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+</head>
+<body  >
+
+    <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light"
+          style="--bs-border-opacity: 0.2"
+        >
+          <div class="container-fluid px-5">
+            <!-- 
+              px-5: padding izquierda y derecha 
+              container-fluid: ocupa todo el ancho
+          -->
+            <a class="navbar-brand" href="/"
+              ><img src="img\logo2.png" alt="Logo" class="logoContainer"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main
+        class="bg-dark d-flex flex-column align-items-center justify-content-center"
+      >
+    <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Top 3 De Mis Proyectos</h2>
+
+          <!-- Cards -->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div
+                class="card bg-dark border-light h-100"
+                style="--bs-border-opacity: 0.5"
+              >
+                <img
+                  src="img\458shots_so.png"
+                  alt="Rodrigo de paul"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <div class="row">
+                    <h3 class="card-title">Mazunte Surf</h3>
+                  </div>
+
+                  <div class="row"><p>Sistema de Gestion de Turnos</p></div>
+
+                  <div class="row"><a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><i class="bi bi-globe"></i> WebSite </a></div>
+
+                  <div class="row"><a href=""><i class="bi bi-code-slash"></i> Code </a></div>
+
+                  <div class="row text-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Mas Informacion
+                  </button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+              <div
+                class="card bg-dark border-light h-100"
+                style="--bs-border-opacity: 0.5"
+              >
+                <img
+                  src="img/288shots_so.png"
+                  alt="Messi"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <div class="row">
+                    <h3 class="card-title">Simpsonzzapi</h3>
+                  </div>
+
+                  <div class="row"><p>E-Commerce</p></div>
+
+                  <div class="row"><a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><i class="bi bi-globe"></i> WebSite </a></div>
+
+                  <div class="row"><a href=""><i class="bi bi-code-slash"></i> Code </a></div>
+
+                  <div class="row text-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary "
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Mas Informacion
+                  </button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div
+                class="card bg-dark border-light h-100"
+                style="--bs-border-opacity: 0.5"
+              >
+                <img
+                  src="img\287shots_so.png"
+                  alt="Di Maria"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <div class="row">
+                    <h3 class="card-title">My Indoor Control</h3>
+                  </div>
+
+                  <div class="row"><p>Sistema de Control Invernaderos</p></div>
+
+                  <div class="row"><a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><i class="bi bi-globe"></i> WebSite </a></div>
+
+                  <div class="row"><a href=""><i class="bi bi-code-slash"></i> Code </a></div>
+
+                  <div class="row text-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Mas Informacion
+                  </button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+</body>
+</html>
