@@ -42,12 +42,13 @@ const renderProject = (project) => {
           <a
             href=${linkWeb}
             class="text-white"
+            target="_blank"
             ><i class="bi bi-globe"></i> WebSite
           </a>
         </div>
 
         <div class="row">
-          <a href=${linkCode} class="text-white"><i class="bi bi-code-slash"></i> Code </a>
+          <a href=${linkCode} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code </a>
         </div>
 
         <div class="row text-center">
@@ -86,18 +87,41 @@ const cardProjectInfo = (project) => {
   const { id, name, category, img, web, code, description, technologies } =
     project;
   return `
-  <div class="card bg-dark border-light mb-1 mt-1 " style="--bs-border-opacity: 0.5 ">
+  <div class="card bg-dark border-light mb-1 mt-1 " style="--bs-border-opacity: 0.5">
   <div class="container d-flex align-items-center gap-1 justify-content-center flex-column" >
   <div data-bs-theme="dark" class=" ms-auto mt-1">
     <button type="button" class="btn-close" aria-label="Close"></button>
   </div>
   <h2 class="text-white fw-bolder mb-0">${name}</h2>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=${img} class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=${img} class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=${img} class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
   <div class="container d-flex justify-content-center">
-    <img
+    /* <img
     src=${img}
     alt=${name}
     class="card-img-top imgContainer"
-    />
+    /> */
   </div>
     <div class="container d-flex flex-column justify-content-center">
     <h4 class="text-white  mb-1">${category}</h4>
@@ -111,8 +135,8 @@ const cardProjectInfo = (project) => {
 
     </div>
     <div class="d-flex gap-4 mb-1">
-    <a href=${web} class="text-white"><i class="bi bi-globe"></i> WebSite </a>
-    <a href=${code} class="text-white"><i class="bi bi-code-slash"></i> Code </a>
+    <a href=${web} class="text-white" target="_blank"><i class="bi bi-globe"></i> WebSite </a>
+    <a href=${code} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code </a>
   </div>
   </div>
 
