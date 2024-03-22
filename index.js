@@ -13,10 +13,16 @@ const renderProject = (project) => {
   const {
     id,
     name,
-    cardImg,
+    img,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
     category,
     linkWeb,
-    linkCode,
+    linkCodeFront,
+    linkCodeBack,
     description,
     technologies,
   } = project;
@@ -27,7 +33,7 @@ const renderProject = (project) => {
       style="--bs-border-opacity: 0.5"
     >
       <img
-        src=${cardImg}
+        src=${img}
         alt=${name}
         class="card-img-top"
       />
@@ -48,8 +54,11 @@ const renderProject = (project) => {
         </div>
 
         <div class="row">
-          <a href=${linkCode} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code </a>
+          <a href=${linkCodeFront} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code FrontEnd</a>
         </div>
+        <div class="row">
+        <a href=${linkCodeBack} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code BackEnd</a>
+      </div>
 
         <div class="row text-center">
         <div class="cols-md-5 mt-2">
@@ -59,9 +68,15 @@ const renderProject = (project) => {
             data-id='${id}'
             data-name='${name}'
             data-category='${category}'
-            data-img='${cardImg}'
+            data-img='${img}'
+            data-img1='${img1}'
+            data-img2='${img2}'
+            data-img3='${img3}'
+            data-img4='${img4}'
+            data-img5='${img5}'
             data-web='${linkWeb}'
-            data-code='${linkCode}'
+            data-front='${linkCodeFront}'
+            data-back='${linkCodeBack}'
             data-description='${description}'
             data-technologies='${technologies}'
           >
@@ -84,7 +99,7 @@ const renderAllProjects = () => {
 };
 
 const cardProjectInfo = (project) => {
-  const { id, name, category, img, web, code, description, technologies } =
+  const { id, name, category, img, img1,img2, img3, img4 , img5, web, front, back, description, technologies } =
     project;
   return `
   <div class="card bg-dark border-light mb-1 mt-1 " style="--bs-border-opacity: 0.5">
@@ -97,14 +112,20 @@ const cardProjectInfo = (project) => {
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src=${img} class="d-block w-100" alt="...">
+      <img src=${img1} class="d-block w-100 caroucelImg" alt="...">
     </div>
     <div class="carousel-item">
-      <img src=${img} class="d-block w-100" alt="...">
+      <img src=${img2} class="d-block w-100 caroucelImg" alt="...">
     </div>
     <div class="carousel-item">
-      <img src=${img} class="d-block w-100" alt="...">
+      <img src=${img3} class="d-block w-100 caroucelImg" alt="...">
     </div>
+    <div class="carousel-item">
+    <img src=${img4} class="d-block w-100 caroucelImg" alt="...">
+  </div>
+  <div class="carousel-item">
+  <img src=${img5} class="d-block w-100 caroucelImg" alt="...">
+</div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,14 +137,7 @@ const cardProjectInfo = (project) => {
   </button>
 </div>
 
-  <div class="container d-flex justify-content-center">
-    /* <img
-    src=${img}
-    alt=${name}
-    class="card-img-top imgContainer"
-    /> */
-  </div>
-    <div class="container d-flex flex-column justify-content-center">
+   <div class="container d-flex flex-column justify-content-center">
     <h4 class="text-white  mb-1">${category}</h4>
       <p class="lead text-white mb-3">
       ${description}
@@ -136,7 +150,8 @@ const cardProjectInfo = (project) => {
     </div>
     <div class="d-flex gap-4 mb-1">
     <a href=${web} class="text-white" target="_blank"><i class="bi bi-globe"></i> WebSite </a>
-    <a href=${code} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code </a>
+    <a href=${front} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code FrontEnd</a>
+    <a href=${back} class="text-white" target="_blank"><i class="bi bi-code-slash"></i> Code BackEnd</a>
   </div>
   </div>
 
