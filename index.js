@@ -102,36 +102,36 @@ const cardProjectInfo = (project) => {
   const { id, name, category, img, img1,img2, img3, img4 , img5, web, front, back, description, technologies } =
     project;
   return `
-  <div class="card bg-dark border-light mb-1 mt-1 " style="--bs-border-opacity: 0.5">
+  <div class="card bg-dark border-light mb-1 mt-1 pb-3 pt-2" style="--bs-border-opacity: 0.5">
   <div class="container d-flex align-items-center gap-1 justify-content-center flex-column" >
   <div data-bs-theme="dark" class=" ms-auto mt-1">
     <button type="button" class="btn-close" aria-label="Close"></button>
   </div>
   <h2 class="text-white fw-bolder mb-0">${name}</h2>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="3000">
       <img src=${img1} class="d-block w-100 caroucelImg" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src=${img2} class="d-block w-100 caroucelImg" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src=${img3} class="d-block w-100 caroucelImg" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="3000">
     <img src=${img4} class="d-block w-100 caroucelImg" alt="...">
   </div>
-  <div class="carousel-item">
+  <div class="carousel-item" data-bs-interval="3000">
   <img src=${img5} class="d-block w-100 caroucelImg" alt="...">
 </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
